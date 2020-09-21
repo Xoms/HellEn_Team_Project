@@ -499,6 +499,19 @@ h2 {
   }
 }
 
+.problems {
+  padding-bottom: 125px;
+}
+@media screen and (min-width: 1344px) {
+  .problems {
+    padding-bottom: 160px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .problems {
+    padding-bottom: 170px;
+  }
+}
 .problems .problems-color {
   background-color: #111518;
   width: 100%;
@@ -513,31 +526,20 @@ h2 {
   letter-spacing: 0.03em;
   color: #ffffff;
   width: 100%;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
   padding-top: 50px;
-  /*  @media screen and (min-width: 768px) {
-
-      margin-right: auto;
-      font-size: 26px;
-      margin-left: auto;
-      max-width: 668px;
-  }
-
-  @media screen and (min-width: 1344px) {
-      max-width: 866px;
-      font-size: 46px;
-  }*/
+  padding-bottom: 240px;
 }
 @media screen and (min-width: 768px) {
   .problems .problems-heading {
     font-size: 26px;
     line-height: 130%;
+    padding-bottom: 140px;
   }
 }
 @media screen and (min-width: 1344px) {
   .problems .problems-heading {
     font-size: 46px;
+    padding-bottom: 120px;
   }
 }
 .problems .problems-heading .problems-orang {
@@ -545,127 +547,155 @@ h2 {
 }
 
 .problems-content {
-  padding-bottom: 447px;
+  position: relative;
 }
 
 .overflovewd-container {
   position: absolute;
+  z-index: 2;
   background-color: #ffffff;
   height: 100%;
-  bottom: -30%;
+  bottom: -38%;
   left: 50%;
+  transform: translateX(-50%);
   width: 280px;
   transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  .overflovewd-container {
+    width: 688px;
+    bottom: -50%;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .overflovewd-container {
+    width: 1344px;
+    bottom: -65%;
+  }
 }
 
 .problems-list {
   background-color: #ffffff;
   padding: 20px 0;
+  padding-left: 30px;
+  padding-right: 14px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   counter-reset: num;
-  color: #FF6B09;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
-  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .problems-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    padding-left: 96px;
+    padding-right: 80px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .problems-list {
+    padding: 70px 0;
+    padding-left: 114px;
+    padding-right: 114px;
+  }
 }
 
+.problem-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .problem-list-item {
+    width: calc((100% - 22px)/2);
+  }
+  .problem-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .problem-list-item:nth-child(odd) {
+    margin-right: 22px;
+  }
+  .problem-list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .problem-list-item {
+    width: calc((100% - 2*40px)/3);
+  }
+  .problem-list-item:nth-child(odd) {
+    margin-right: 0;
+  }
+  .problem-list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 0;
+  }
+  .problem-list-item:not(:nth-child(3n)) {
+    margin-right: 40px;
+  }
+  .problem-list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 40px;
+  }
+}
+
+/*Цифири и линии*/
 .problems-list .problem-list-item {
   counter-increment: num;
   position: relative;
-  margin: 5px 0 5px 40px;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .problems-list .problem-list-item:before {
-  color: #FF6B09;
-  text-align: center;
-  font-family: Montserrat;
+  font-weight: bold;
   font-size: 14px;
-  width: 15px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: #FF6B09;
+  width: 20px;
   height: 2px;
   display: block;
-  transform: translate(0px, 10px);
-  margin-right: 4px;
+  transform: translateY(11px);
+}
+@media screen and (min-width: 768px) {
+  .problems-list .problem-list-item:before {
+    transform: translateY(13px);
+  }
 }
 
 .problems-list .problem-list-item:nth-last-child(-n+6) :before {
   content: "0" counter(num);
   display: flex;
   color: #FF6B09;
-  /* margin-left: 50px;
-  margin-bottom: 10px;*/
   transform: translateX(12%);
 }
 
-.problem-list-item {
-  list-style: none;
-  position: relative;
-}
-@media screen and (min-width: 768px) {
-  .problem-list-item {
-    width: 100%;
-    max-width: 236px;
-    margin-top: 8px;
-  }
-}
-@media screen and (min-width: 1344px) {
-  .problem-list-item {
-    width: 100%;
-    max-width: 336px;
-  }
-}
-.problem-list-item .problem-list-item:not(:first-child) {
-  margin-top: 10px;
-  /* @media screen and (min-width: 768px) {
-          margin-top: 8px;
-      }
-
-      @media screen and (min-width: 1344px) {
-          margin-top: 0px;
-      }*/
-}
-
-@media screen and (min-width: 768px) {
-  .problem-list-item:nth-child(2n+1) {
-    margin-right: 40px;
-  }
-}
-
-.problem-list-item:nth-child(n+4) {
-  margin-top: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .problem-list-item:not(:nth-child(3n+1)) {
-    margin-left: 40px;
-  }
-}
-
-@media screen and (min-width: 1344px) {
-  .problem-list-item:nth-child(3n+1) {
-    max-width: 290px;
-  }
-}
-
 .problems-list-line-stroca {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #111518;
-  /* display: flex;*/
-  align-items: center;
+  font-size: 14px;
+  line-height: 143%;
   letter-spacing: 0.08em;
-  margin-block-start: 5px;
-  margin-block-end: 0px;
-  /* display: inline;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  letter-spacing: 0.08em;*/
+  color: #111518;
+}
+@media screen and (min-width: 768px) {
+  .problems-list-line-stroca {
+    line-height: 171%;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .problems-list-line-stroca {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+.problems-img {
+  display: none;
+}
+@media screen and (min-width: 1344px) {
+  .problems-img {
+    fill: #3D3D3D;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: -350px;
+    height: 300px;
+    z-index: 2;
+  }
 }
 
 .secrets .title {
@@ -1275,16 +1305,16 @@ ol li::before {
 
 .prepod {
   width: 100%;
-  padding-top: 360px;
+  padding-top: 50px;
 }
 @media screen and (min-width: 768px) {
   .prepod {
-    padding-top: 292px;
+    padding-top: 50px;
   }
 }
 @media screen and (min-width: 1344px) {
   .prepod {
-    padding-top: 330px;
+    padding-top: 60px;
   }
 }
 
