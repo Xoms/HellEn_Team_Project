@@ -184,16 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"js/slick-1.8.1/slick/slick.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\tablet\\header-tablet-vektor1x.png":[["header-tablet-vektor1x.25d54fe4.png","images/tablet/header-tablet-vektor1x.png"],"images/tablet/header-tablet-vektor1x.png"],"./..\\images\\desctop\\header-vektor1x.png":[["header-vektor1x.3dabc444.png","images/desctop/header-vektor1x.png"],"images/desctop/header-vektor1x.png"],"./..\\images\\svg\\strelo4ka-left.svg":[["strelo4ka-left.71701e35.svg","images/svg/strelo4ka-left.svg"],"images/svg/strelo4ka-left.svg"],"./..\\images\\svg\\strelo4ka-right.svg":[["strelo4ka-right.60ba278c.svg","images/svg/strelo4ka-right.svg"],"images/svg/strelo4ka-right.svg"],"./..\\images\\mobile\\bk-botton1x.png":[["bk-botton1x.db609f66.png","images/mobile/bk-botton1x.png"],"images/mobile/bk-botton1x.png"],"./..\\images\\mobile\\bk-botton@2x.png":[["bk-botton@2x.15dc4d6e.png","images/mobile/bk-botton@2x.png"],"images/mobile/bk-botton@2x.png"],"./..\\images\\tablet\\fon-action-tablet1x.png":[["fon-action-tablet1x.e63ee9fa.png","images/tablet/fon-action-tablet1x.png"],"images/tablet/fon-action-tablet1x.png"],"./..\\images\\tablet\\fon-action-tablet@2x.png":[["fon-action-tablet@2x.f2fcce94.png","images/tablet/fon-action-tablet@2x.png"],"images/tablet/fon-action-tablet@2x.png"],"./..\\images\\desctop\\desktop-bk-bottom1x.png":[["desktop-bk-bottom1x.a34b53f4.png","images/desctop/desktop-bk-bottom1x.png"],"images/desctop/desktop-bk-bottom1x.png"],"./..\\images\\desctop\\desktop-bk-bottom@2x.png":[["desktop-bk-bottom@2x.ee70a88b.png","images/desctop/desktop-bk-bottom@2x.png"],"images/desctop/desktop-bk-bottom@2x.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -221,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59568" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49317" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -397,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/slick.7255a351.js.map
