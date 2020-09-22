@@ -56,9 +56,16 @@ h2 {
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 @media screen and (min-width: 1344px) {
   .container {
+    max-width: unset;
     width: 1344px;
   }
 }
@@ -507,7 +514,7 @@ h2 {
 }
 @media screen and (min-width: 1344px) {
   .problems {
-    padding-bottom: 160px;
+    padding-bottom: 190px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -530,19 +537,16 @@ h2 {
   color: #ffffff;
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 300px;
 }
 @media screen and (min-width: 768px) {
   .problems .problems-heading {
     font-size: 26px;
     line-height: 130%;
-    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1344px) {
   .problems .problems-heading {
     font-size: 46px;
-    padding-bottom: 190px;
     width: 836px;
   }
 }
@@ -552,6 +556,17 @@ h2 {
 
 .problems-content {
   position: relative;
+  padding-bottom: 300px;
+}
+@media screen and (min-width: 768px) {
+  .problems-content {
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .problems-content {
+    padding-bottom: 190px;
+  }
 }
 
 .overflovewd-container {
@@ -1819,6 +1834,7 @@ h2 {
 
 /*Стрелки общее (основной слайдер)*/
 .bullets-slider .slick-arrow {
+  outline: none;
   position: absolute;
   z-index: 10;
   bottom: 25;
@@ -1869,7 +1885,7 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .bullets-slider .slick-arrow.slick-next {
-    right: -40px;
+    right: -20px;
   }
 }
 @media screen and (min-width: 1344px) {
