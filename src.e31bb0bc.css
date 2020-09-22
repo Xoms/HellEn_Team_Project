@@ -527,19 +527,20 @@ h2 {
   color: #ffffff;
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 240px;
+  padding-bottom: 300px;
 }
 @media screen and (min-width: 768px) {
   .problems .problems-heading {
     font-size: 26px;
     line-height: 130%;
-    padding-bottom: 140px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1344px) {
   .problems .problems-heading {
     font-size: 46px;
-    padding-bottom: 120px;
+    padding-bottom: 190px;
+    width: 836px;
   }
 }
 .problems .problems-heading .problems-orang {
@@ -640,30 +641,31 @@ h2 {
   position: relative;
 }
 
-.problems-list .problem-list-item:before {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.08em;
-  color: #FF6B09;
+/*Линии*/
+.problems-list .problem-list-item::before {
+  content: "";
+  background-color: #FF6B09;
   width: 20px;
   height: 2px;
   display: block;
   transform: translateY(11px);
 }
 @media screen and (min-width: 768px) {
-  .problems-list .problem-list-item:before {
+  .problems-list .problem-list-item::before {
     transform: translateY(13px);
   }
 }
 
-.problems-list .problem-list-item:nth-last-child(-n+6) :before {
+/*цифири*/
+.problems-list .problem-list-item:nth-last-child(-n+9) :before {
   content: "0" counter(num);
   display: flex;
   color: #FF6B09;
   transform: translateX(12%);
+  margin-bottom: 20px;
 }
 
+/*текст*/
 .problems-list-line-stroca {
   font-weight: bold;
   font-size: 14px;
@@ -683,6 +685,7 @@ h2 {
   }
 }
 
+/*Огонь*/
 .problems-img {
   display: none;
 }
@@ -692,8 +695,8 @@ h2 {
     position: absolute;
     display: block;
     bottom: 0;
-    right: -350px;
-    height: 300px;
+    right: -110px;
+    height: 350px;
     z-index: 2;
   }
 }
@@ -942,8 +945,8 @@ h2 {
 
 .programm-image {
   position: absolute;
-  top: 74%;
-  right: 0;
+  top: 95%;
+  right: -20px;
   width: 127px;
   height: 137px;
   z-index: 1;
@@ -982,21 +985,31 @@ h2 {
   padding: 0;
   counter-increment: num;
 }
+.strange-list .strange-list-item p::before {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 164.9%;
+  letter-spacing: 0.08em;
+}
 
 .strange-list .strange-list-item:nth-last-child(-n+6) :before {
   content: "0" counter(num);
   display: flex;
   color: #FF6B09;
-  transform: translateX(7%);
 }
 
-ol li::before {
+.strange-list li::before {
   content: "";
   display: block;
   background-color: #FF6B09;
   width: 15px;
   height: 1px;
-  transform: translate(0px, 10px);
+  transform: translate(0px, 12px);
+}
+
+.strange-list .strange-list-item p::before {
+  transform: translateX(22px);
 }
 
 .strange-list li p {
@@ -1043,6 +1056,14 @@ ol li::before {
   }
   .programm-sublist-item-container .programm-sublist-item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  .strange-list .strange-list-item p::before {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 164.9%;
+    letter-spacing: 0.08em;
   }
 
   .programm-box::before {
@@ -1131,6 +1152,14 @@ ol li::before {
     position: absolute;
     top: 258px;
     left: 0px;
+  }
+
+  .strange-list .strange-list-item p::before {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 164.9%;
+    letter-spacing: 0.08em;
   }
 
   .programm-list-item::before {
@@ -1225,7 +1254,7 @@ ol li::before {
     line-height: 28px;
   }
 
-  ol li::before {
+  .strange-list li::before {
     transform: translate(-2px, 13px);
   }
 }
@@ -1377,6 +1406,14 @@ ol li::before {
   position: absolute;
   left: -30px;
   /*пол ширины + паддинг*/
+  width: 17px;
+  height: 14px;
+}
+@media screen and (min-width: 1344px) {
+  .prepod__achievments-list-item-icon {
+    width: 24px;
+    height: 20px;
+  }
 }
 
 .prepod-characteristic {
@@ -1939,6 +1976,27 @@ ol li::before {
   justify-content: center;
   align-items: center;
 }
+.action input {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.214;
+  align-items: center;
+  padding-left: 28px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 1344px) {
+  .action input {
+    padding-left: 40px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    align-items: center;
+    letter-spacing: 0.08em;
+  }
+}
 .action .form-input {
   display: block;
   width: 280px;
@@ -1969,9 +2027,6 @@ ol li::before {
 }
 .action .form-input::placeholder {
   color: #ffffff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 28px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.214;
@@ -1979,9 +2034,6 @@ ol li::before {
 }
 @media screen and (min-width: 1344px) {
   .action .form-input::placeholder {
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-left: 40px;
     font-size: 20px;
     line-height: 1.2;
   }
