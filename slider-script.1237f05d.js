@@ -137,14 +137,21 @@ $(document).ready(function () {
     infinite: true,
     focusOnSelect: true,
     responsive: [{
-      breakpoint: 321,
+      breakpoint: 320,
       //min-width
       settings: {
         slidesToShow: 3,
         slideToScroll: 1
       }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 5,
+        slideToScroll: 1
+      }
     }],
-    // mobileFirst: true, //для min-width - иначе будет max-width
+    mobileFirst: true,
+    //для min-width - иначе будет max-width
     arrows: true
   });
 });
@@ -176,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57273" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53309" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

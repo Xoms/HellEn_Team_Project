@@ -43,7 +43,6 @@ img {
 .btn {
   cursor: pointer;
   text-decoration: none;
-  margin-left: 60px;
   padding: 14px;
   border: none;
   outline: 2px solid #FF6B09;
@@ -553,7 +552,6 @@ img {
   left: 50%;
   transform: translateX(-50%);
   width: 280px;
-  transform: translateX(-50%);
 }
 @media screen and (min-width: 768px) {
   .overfloved-container {
@@ -736,7 +734,7 @@ img {
 }
 @media screen and (min-width: 1344px) {
   .secrets .list-item {
-    width: 374px;
+    width: 388px;
     height: 396px;
     margin: 10px;
     padding: 0 20px;
@@ -918,6 +916,7 @@ img {
   background-color: #FF6B09;
   position: absolute;
   left: -33px;
+  z-index: 2;
 }
 
 .programm-image {
@@ -1125,6 +1124,7 @@ img {
     height: 1px;
     background-color: #ffffff;
     position: absolute;
+    z-index: 1;
     top: 258px;
     left: 0px;
   }
@@ -1192,7 +1192,7 @@ img {
     font-size: 20px;
     font-weight: bold;
     line-height: 1.4;
-    min-height: 112px;
+    min-height: 144px;
   }
   .strange-list .strange-list-item span {
     font-size: 20px;
@@ -2071,17 +2071,6 @@ img {
   color: #B9B9B9;
   letter-spacing: 0.05em;
 }
-@media screen and (min-width: 768px) {
-  .footer .footer-last-content {
-    justify-content: flex-start;
-    padding-left: 40px;
-  }
-}
-@media screen and (min-width: 1344px) {
-  .footer .footer-last-content {
-    padding-left: 15px;
-  }
-}
 .footer .footer-number .footer-number-link {
   display: flex;
   align-items: center;
@@ -2139,8 +2128,16 @@ img {
 }
 
 .btn-footer {
+  margin-left: 0;
   background: #FF6B09;
   color: #ffffff;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .btn-footer {
+    width: 260px;
+    height: 48px;
+    letter-spacing: 0.04em;
+  }
 }
 .btn-footer:hover, .btn-footer:focus {
   color: #FF6B09;
@@ -2233,6 +2230,7 @@ body.is-open {
 
 .btn-modal-call {
   display: flex;
+  margin: 0 auto;
   align-items: center;
   text-align: center;
   color: #FF6B09;
