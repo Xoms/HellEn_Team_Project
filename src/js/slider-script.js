@@ -33,7 +33,7 @@ $(document).ready(function(){
         }
       }
     ],
-     mobileFirst: true, //для min-width - иначе будет max-width
+    mobileFirst: true, //для min-width - иначе будет max-width
     arrows: true
 
 });
